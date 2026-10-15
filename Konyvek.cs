@@ -13,18 +13,17 @@ namespace OOP_Gyakorlas_Dolgozatra
         public string Cim;
         public string Szerzo;
         public int Ar 
-        { get;
+        { get => ar;
           set => ar = value < 0 ? 0 : value;
                 }
         public int RaktarKeszlet
         {
-            get;
+            get => raktarKeszlet;
             set => raktarKeszlet = value < 0 ? 0 : value;
         }
         public static int OsszesRegisztraltKonyv 
         {
             get => osszesRegisztraltKonyv;
-            set;
         }
         public Konyvek(string azonosito, string cim, string szerzo, int ar):this(azonosito,cim,szerzo,ar,1) 
         {
@@ -41,7 +40,7 @@ namespace OOP_Gyakorlas_Dolgozatra
         }
         public override string ToString()
         {
-            return $"{Azonosito} Szerzo: {Cim} - {Ar} Ft | Készlet: {RaktarKeszlet} db";
+            return $"[{Azonosito}] {Szerzo}: {Cim} - {Ar} Ft | Készlet: {RaktarKeszlet} db";
         }
         public int TeljesErtek()
         {
