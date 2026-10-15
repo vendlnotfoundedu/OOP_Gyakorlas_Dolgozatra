@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOP_Gyakorlas_Dolgozatra
 {
-    internal class Konyvek
+    public class Konyvek
     {
         private int ar;
         private int raktarKeszlet;
